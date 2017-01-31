@@ -1,5 +1,5 @@
 # ProgrammingLevel
-consol appliaction that tell how skilled programmer you are
+console application that tell how skilled programmer you are
 
 it is in Python 3.5 
 
