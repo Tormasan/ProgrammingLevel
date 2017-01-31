@@ -5,11 +5,16 @@ print('this program provide you information about how big is your breeeeee')
 print('Put this .py file in your directory where all your code is (trust me kevin)')
 print('now run it BIATCH!!!')
 print('\n')
+
+print('tell me what kind of extension you want maybe *.py *.c ')
+extension=str(input(":"))
+print("\n")
+
 print('the program find the following items: ')
 
-countedLine = 0
+countedLine = 1
 
-for filename in glob.glob("*.*"):
+for filename in glob.glob(extension, recursive=False):
     print(filename)
     with open(filename) as readFile:
         lineCount=sum(1 for _ in readFile)
@@ -51,3 +56,4 @@ elif flooredSkillLevel == 11:
     print('PY GOD')
 else:
     print('+=')
+
